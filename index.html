@@ -3,29 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Previsão do tempo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="caixa-maior">
-      <input class="input-cidade" />
-      <input placeholder="Digite a cidade" />
-      <button class="botao-buscar">
+      <input class="input-cidade" placeholder="Digite o nome da cidade" />
+      <button class="botao-buscar" onclick="cliqueBotao()">
         <img
           class="img-buscar"
           alt="buscar"
           src="https://www.svgrepo.com/show/488200/find.svg"
         />
       </button>
-      <h2>Tempo em São Paulo</h2>
-      <p>Temperatura 21°</p>
-      <img
-        alt="icone-in-tempo"
-        src="https://openweathermap.org/img/wn/04n.png"
-      />
-      <p>Nublado</p>
-      <p>Umidade 76%</p>
+
+      <div class="caixa-media">
+        <h2 class="cidade">Tempo em São Paulo</h2>
+        <p class="temp">Temperatura 21°</p>
+
+        <div class="caixa-menor">
+          <img
+            class="img-previsao"
+            alt="icone-in-tempo"
+            src="https://openweathermap.org/img/wn/04n.png"
+          />
+        </div>
+        <p class="previsao">Nublado</p>
+      </div>
+      <p class="umidade">Umidade 76%</p>
     </div>
   </body>
 </html>
